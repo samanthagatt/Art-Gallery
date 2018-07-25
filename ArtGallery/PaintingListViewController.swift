@@ -27,7 +27,9 @@ class PaintingListViewController: UIViewController, UITableViewDataSource, Paint
         
         paintingController.toggleIsLiked(forPainting: painting)
         
+        UIView.setAnimationsEnabled(false)
         tableView.reloadRows(at: [unwrappedIndexPath], with: .automatic)
+        UIView.setAnimationsEnabled(true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
