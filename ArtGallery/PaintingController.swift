@@ -25,8 +25,16 @@ class PaintingController {
         }
     }
 
+    var numberOfTaps = 1
+    
     func toggleIsLiked(forPainting: Painting) {
-        
+        if numberOfTaps % 2 == 0 {
+            forPainting.isLiked = true
+            numberOfTaps += 1
+        } else {
+            forPainting.isLiked = false
+            numberOfTaps += 1
+        }
     }
     
     init () {
