@@ -8,16 +8,33 @@
 
 import UIKit
 
-class PaintingListViewController: UIViewController {
+class PaintingListViewController: UIViewController, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        tableView.dataSource = self
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return paintingController.paintings.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let unwrappedCell = tableView.dequeueReusableCell(withIdentifier: "PaintingCell")
+        guard let cell = unwrappedCell as? PaintingTableViewCell else { fatalError("no cell")}
+        
+        let painting = paintingController.paintings[indexPath.row]
+        cell.painting = painting
+        
+        
+        return cell
     }
 
     
     @IBOutlet weak var tableView: UITableView!
     
-    var paintingController : PaintingController?
+    var paintingController = PaintingController()
 }

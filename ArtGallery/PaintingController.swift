@@ -28,4 +28,8 @@ class PaintingController {
     func toggleIsLiked(forPainting: Painting) {
         
     }
+    
+    init () {
+        loadPaintingsFromAssets()
+    }
 }
