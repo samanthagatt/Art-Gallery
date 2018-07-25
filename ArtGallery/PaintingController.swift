@@ -19,21 +19,18 @@ class PaintingController {
             let paintingName = "Image\(x)"
             guard let image = UIImage(named: paintingName) else { return }
             
-            let painting = Painting(image: image)
+            let painting = Painting(image: image, isLiked: false)
             
             paintings.append(painting)
         }
     }
 
-    var numberOfTaps = 1
     
     func toggleIsLiked(forPainting: Painting) {
-        if numberOfTaps % 2 == 0 {
+        if forPainting.isLiked == false {
             forPainting.isLiked = true
-            numberOfTaps += 1
         } else {
             forPainting.isLiked = false
-            numberOfTaps += 1
         }
     }
     

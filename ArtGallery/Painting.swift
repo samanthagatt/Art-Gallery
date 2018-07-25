@@ -13,7 +13,7 @@ class Painting {
     var image: UIImage
     var isLiked: Bool
     
-    init(image: UIImage, isLiked: Bool = false) {
+    init(image: UIImage, isLiked: Bool) {
         self.image = image
         self.isLiked = isLiked
     }
