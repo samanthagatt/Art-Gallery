@@ -18,10 +18,8 @@ class PaintingListViewController: UIViewController, UITableViewDataSource, Paint
     }
     
     func likeButtonWasTapped(onCell: PaintingTableViewCell) {
-        let unwrappedCell = tableView.dequeueReusableCell(withIdentifier: "PaintingCell")
-        guard let cell = unwrappedCell as? PaintingTableViewCell else { fatalError("no cell")}
         
-        let indexPath = tableView.indexPath(for: cell)
+        let indexPath = tableView.indexPath(for: onCell)
         guard let unwrappedIndexPath = indexPath else { return }
         guard let index = indexPath?.row else { return }
         
