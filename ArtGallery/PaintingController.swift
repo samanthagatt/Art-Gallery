@@ -9,19 +9,23 @@
 import Foundation
 import UIKit
 
-var paintings : [Painting] = []
 
-func loadPaintingsFromAssets() {
-    for x in 1...12 {
-        let paintingName = "Image\(x)"
-        guard let image = UIImage(named: paintingName) else { return }
-        
-        let painting = Painting(image: image)
-        
-        paintings.append(painting)
-    }
-}
-
-func toggleIsLiked(forPainting: Painting) {
+class PaintingController {
     
+    private(set) var paintings : [Painting] = []
+
+    func loadPaintingsFromAssets() {
+        for x in 1...12 {
+            let paintingName = "Image\(x)"
+            guard let image = UIImage(named: paintingName) else { return }
+            
+            let painting = Painting(image: image)
+            
+            paintings.append(painting)
+        }
+    }
+
+    func toggleIsLiked(forPainting: Painting) {
+        
+    }
 }

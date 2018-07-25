@@ -8,19 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		469AAC42210258C200C0D421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469AAC41210258C200C0D421 /* AppDelegate.swift */; };
-		469AAC44210258C200C0D421 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469AAC43210258C200C0D421 /* ViewController.swift */; };
 		469AAC47210258C200C0D421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469AAC45210258C200C0D421 /* Main.storyboard */; };
 		469AAC49210258C300C0D421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469AAC48210258C300C0D421 /* Assets.xcassets */; };
 		469AAC4C210258C300C0D421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469AAC4A210258C300C0D421 /* LaunchScreen.storyboard */; };
 		D6B9C26C210907620018CD86 /* Painting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9C26B210907620018CD86 /* Painting.swift */; };
 		D6B9C26E210909910018CD86 /* PaintingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9C26D210909910018CD86 /* PaintingController.swift */; };
 		D6B9C27021090F840018CD86 /* PaintingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9C26F21090F840018CD86 /* PaintingTableViewCell.swift */; };
+		D6B9C272210916D80018CD86 /* PaintingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9C271210916D80018CD86 /* PaintingListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		469AAC3E210258C200C0D421 /* ArtGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469AAC41210258C200C0D421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		469AAC43210258C200C0D421 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		469AAC46210258C200C0D421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		469AAC48210258C300C0D421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		469AAC4B210258C300C0D421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +27,7 @@
 		D6B9C26B210907620018CD86 /* Painting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Painting.swift; sourceTree = "<group>"; };
 		D6B9C26D210909910018CD86 /* PaintingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingController.swift; sourceTree = "<group>"; };
 		D6B9C26F21090F840018CD86 /* PaintingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingTableViewCell.swift; sourceTree = "<group>"; };
+		D6B9C271210916D80018CD86 /* PaintingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				469AAC41210258C200C0D421 /* AppDelegate.swift */,
-				469AAC43210258C200C0D421 /* ViewController.swift */,
 				469AAC45210258C200C0D421 /* Main.storyboard */,
+				D6B9C271210916D80018CD86 /* PaintingListViewController.swift */,
 				D6B9C26F21090F840018CD86 /* PaintingTableViewCell.swift */,
 				D6B9C26B210907620018CD86 /* Painting.swift */,
 				D6B9C26D210909910018CD86 /* PaintingController.swift */,
@@ -147,7 +147,7 @@
 				D6B9C26C210907620018CD86 /* Painting.swift in Sources */,
 				D6B9C26E210909910018CD86 /* PaintingController.swift in Sources */,
 				D6B9C27021090F840018CD86 /* PaintingTableViewCell.swift in Sources */,
-				469AAC44210258C200C0D421 /* ViewController.swift in Sources */,
+				D6B9C272210916D80018CD86 /* PaintingListViewController.swift in Sources */,
 				469AAC42210258C200C0D421 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
